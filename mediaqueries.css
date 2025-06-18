@@ -168,12 +168,11 @@
 
 @media screen and (max-width: 600px) {
   .toggle-container {
-    left: 50%;
-    right: auto;
-    bottom: 0.3rem;
-    top: auto;
-    transform: translateX(-50%);
-    position: absolute;
-    z-index: 1000;
+    position: static !important;
+    margin-bottom: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
