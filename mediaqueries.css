@@ -134,23 +134,26 @@
   }
 }
 
-@media screen and (max-width: 600px) {
-  .toggle-container {
-    top: auto;
-    bottom: 2rem;
-    right: 2rem;
-    left: auto;
-  }
-}
-
 @media screen and (max-width: 1200px) {
   .toggle-container {
     position: fixed;
-    top: auto;
-    bottom: 2rem;
-    right: 5rem;
+    bottom: 2rem;   
+    right: 4rem;  
     left: auto;
+    top: auto;
     z-index: 1000;
     gap: 0.3rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .toggle-container {
+    left: 50%;
+    right: auto;
+    bottom: 2.5rem;
+    top: auto;
+    transform: translateX(-50%);
+    position: fixed;
+    z-index: 1000;
   }
 }
