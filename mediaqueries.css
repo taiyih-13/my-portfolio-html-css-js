@@ -56,11 +56,19 @@
 }
 
 @media screen and (max-width: 600px) {
-  #projects .about-containers, .details-container {
+  #projects .about-containers {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+  }
+  #projects .details-container {
+    margin: 0 auto;
+    width: 90%;         /* Makes cards not full width, but centered */
+    max-width: 350px;   /* Adjust as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
