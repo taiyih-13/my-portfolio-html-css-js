@@ -419,3 +419,204 @@ footer {
 footer p {
     text-align: center;
 }
+
+/* ________________________________________ */
+/* Dark mode toggle styles */
+.toggle-container {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.toggle-icon {
+  font-size: 1.5rem;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 26px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 26px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px; width: 22px;
+  left: 2px; bottom: 2px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #333;
+}
+
+input:checked + .slider:before {
+  transform: translateX(22px);
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background: #181818;
+  color: #f1f1f1;
+}
+
+body.dark-mode nav,
+body.dark-mode section,
+body.dark-mode footer {
+  background: #181818;
+  color: #f1f1f1;
+}
+
+body.dark-mode .details-container,
+body.dark-mode .about-details-container,
+body.dark-mode .about-containers,
+body.dark-mode .experience-details-container {
+  background: #222;
+  color: #f1f1f1;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background: #181818;
+  color: #f1f1f1;
+}
+
+/* Text elements */
+body.dark-mode p,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6,
+body.dark-mode .title,
+body.dark-mode .experience-sub-title {
+  color: #f1f1f1;
+}
+
+body.dark-mode .nav-links a:hover {
+  text-decoration-color: #878d93; /* or any dark gray you prefer */
+}
+
+/* Links */
+body.dark-mode a {
+  color: #ffffff;
+}
+
+body.dark-mode a:hover {
+  color: #878d93;
+}
+
+/* Buttons */
+body.dark-mode .btn,
+body.dark-mode .btn-color-1,
+body.dark-mode .btn-color-2 {
+  background: #222;
+  color: #f1f1f1;
+  border: 1px solid #444;
+}
+
+body.dark-mode .btn:hover,
+body.dark-mode .btn-color-1:hover,
+body.dark-mode .btn-color-2:hover {
+  background: #333;
+  color: #fff;
+  border-color: #878d93;
+}
+
+/* Containers */
+body.dark-mode .details-container,
+body.dark-mode .about-details-container,
+body.dark-mode .about-containers,
+body.dark-mode .experience-details-container,
+body.dark-mode .contact-info-upper-container {
+  background: #222;
+  color: #f1f1f1;
+}
+
+/* Adjust icon color if needed */
+body.dark-mode .icon {
+  filter: brightness(0.8) invert(1);
+}
+
+.about-details-container,
+.details-container,
+.experience-details-container,
+.about-containers,
+.contact-info-upper-container {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+body.dark-mode .btn-color-1 {
+  background: #fff !important;
+  color: #181818 !important;
+  border: 1px solid #fff !important;
+}
+
+body.dark-mode .btn-color-1:hover {
+  background: #e0e0e0 !important;
+  color: #181818 !important;
+  border: 1px solid #e0e0e0 !important;
+}
+
+.toggle-logo-1 {
+  width: 25px; 
+  height: 25px;  
+  object-fit: contain;
+  vertical-align: middle;
+}
+
+.toggle-logo-2 {
+  width: 20px; 
+  height: 20px;  
+  object-fit: contain;
+  vertical-align: middle;
+}
+
+body.dark-mode .toggle-logo-1,
+body.dark-mode .toggle-logo-2 {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+/* Invert hamburger icon in dark mode */
+body.dark-mode .hamburger-icon span {
+  background: #fff !important;
+}
+
+/* Invert hamburger menu background and links in dark mode */
+body.dark-mode .menu-links {
+  background: #222 !important;
+}
+
+body.dark-mode .menu-links a {
+  color: #fff !important;
+}
+
+body.dark-mode .menu-links a:hover {
+  color: #8ab4f8 !important;
+  text-decoration-color: #8ab4f8 !important;
+}
+
