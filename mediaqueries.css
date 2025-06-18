@@ -55,20 +55,22 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
-  #projects .details-container {
-    width: 90vw;
-    max-width: 400px;
-    margin: 0 auto;
-    box-sizing: border-box;
-  }
-}
 @media screen and (max-width: 600px) {
+  #projects,
+  #projects .about-containers {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+  }
   #projects .details-container {
-    width: 90vw;
+    width: 95%;
     max-width: 350px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     box-sizing: border-box;
+    display: block;
   }
 }
 
