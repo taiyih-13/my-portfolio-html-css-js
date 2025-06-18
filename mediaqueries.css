@@ -43,6 +43,7 @@
   }
     /* Add this for the projects section */
   #projects .about-containers {
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
