@@ -63,9 +63,6 @@
     gap: 2rem;
   }
   #projects .details-container {
-    margin: 0 auto;
-    width: 90%;         /* Makes cards not full width, but centered */
-    max-width: 350px;   /* Adjust as needed */
     display: flex;
     flex-direction: column;
     align-items: center;
