@@ -55,6 +55,23 @@
   }
 }
 
+@media screen and (max-width: 1200px) {
+  #projects .details-container {
+    width: 90vw;
+    max-width: 400px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 600px) {
+  #projects .details-container {
+    width: 90vw;
+    max-width: 350px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+}
+
 @media screen and (max-width: 600px) {
   #contact, footer {
     height: 40vh;
