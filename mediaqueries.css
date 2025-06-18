@@ -150,10 +150,10 @@
   .toggle-container {
     left: 50%;
     right: auto;
-    bottom: 2.5rem;
+    bottom: 1rem;
     top: auto;
     transform: translateX(-50%);
-    position: fixed;
+    position: absolute;
     z-index: 1000;
   }
 }
