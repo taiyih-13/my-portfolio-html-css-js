@@ -55,6 +55,19 @@
   }
 }
 
+.desktop-toggle { display: flex; }
+.mobile-toggle { display: none; }
+
+@media screen and (max-width: 600px) {
+  .desktop-toggle { display: none !important; }
+  .mobile-toggle {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+}
+
 @media screen and (max-width: 600px) {
   #contact, footer {
     height: 40vh;
